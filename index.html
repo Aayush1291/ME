@@ -48,20 +48,18 @@
     <script>
         function checkAnswer() {
             var enteredText = document.getElementById("answer").value;
-            var answer = "eight"; // Correct answer in lowercase
+            var answer = "Enthalpy"; // Correct answer in lowercase
 
             if (enteredText.trim().toLowerCase() === answer) {
                 document.getElementById("result").innerHTML = "Lab no.: (544÷4)×2−159";
-            } else if (enteredText.trim() === "8") {
-                document.getElementById("result").innerHTML = "Lab no.: (544÷4)×2−159";
-            } else {
+             else {
                 document.getElementById("result").innerHTML = "Incorrect";
             }
         }
     </script>
 </head>
 <body>
-    <h1>Mostly ____ bit is an 8051 microcontroller.</h1>
+    <h1>The sum of internal energy (U) and the product of pressure and volume (p.v) is known as</h1>
     <input type="text" id="answer" placeholder="Enter your answer">
     <button onclick="checkAnswer()">Check Answer</button>
     <p id="result"></p>
